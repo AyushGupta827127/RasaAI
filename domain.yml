@@ -1,0 +1,33 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - ask_gst_registration
+  - ask_tax_deductions
+  - ask_compliance_deadline
+  - ask_audit_requirements
+  - ask_company_secretary_services
+  - ask_tax_filing
+  - ask_ca_services
+  - ask_financial_reporting
+  - ask_compliance_regulations
+  - ask_saving_tax
+
+responses:
+  utter_ask_gst_registration:
+    - text: "GST registration is required if your turnover exceeds Rs. 20 lakhs. Would you like assistance with registration?"
+  utter_ask_tax_deductions:
+    - text: "Some common tax deductions include Section 80C, 80D, and others. Would you like more information on these?"
+  utter_ask_compliance_deadline:
+    - text: "The GST returns filing deadline is the 20th of every month. For income tax filing, it's generally July 31st. Do you need further details?"
+  utter_ask_audit_requirements:
+    - text: "An audit is mandatory for companies with a turnover exceeding Rs. 1 crore under the Income Tax Act. Would you like more details?"
+  utter_ask_company_secretary_services:
+    - text: "Company secretaries help with regulatory filings, corporate governance, and compliance matters. Can I assist with specific services?"
+  utter_ask_tax_filing:
+    - text: "Income tax filing requires submitting ITR forms based on your income. Would you like help with tax calculations?"
+  utter_ask_ca_services:
+    - text: "Chartered Accountants assist with financial audits, tax planning, and compliance. Let me know what specific services you need."
+  utter_ask_financial_reporting:
+    - text: "Financial reporting involves preparing annual financial statements as per accounting standards. Would you like help with that?"

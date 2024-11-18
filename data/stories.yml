@@ -1,0 +1,45 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+
+- story: sad path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: sad path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_goodbye
+
+- story: ask compliance policy
+  steps:
+    - intent: ask_compliance_policy
+    - action: utter_ask_compliance_policy
+
+- story: ask tax regulation
+  steps:
+    - intent: ask_tax_regulation
+    - action: utter_ask_tax_regulation
+
+- story: ask compliance deadline
+  steps:
+    - intent: ask_deadline
+    - action: utter_ask_deadline
